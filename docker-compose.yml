@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  py-backend:
+    build:
+      context: ./backend 
+    container_name: blockhouse-backend
+    volumes:
+      - ./backend/server:/server  
+    ports:
+      - "8000:8000"  
+    environment:
+      - DEBUG=1  
+
+  nextjs-frontend:
+    build:
+      context: ./client  
+    container_name: blockhouse-client
+    volumes:
+      - ./frontend:/app 
+    ports:
+      - "3000:3000"  
