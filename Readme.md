@@ -16,7 +16,7 @@ Docker Compose makes it easy to set up and run the project. It will build and st
 
    ```bash
    git clone <https://github.com/olivemonk/blockhouse-chart-fullstack>
-   cd <repository-directory>
+   cd blockhouse-chart-fullstack
 2. **Build and start the services:""
 
    ```bash
